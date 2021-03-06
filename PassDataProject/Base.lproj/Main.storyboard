@@ -87,15 +87,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUG-c6-l9n">
-                                <rect key="frame" x="165.5" y="161" width="83" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="83" id="pyX-Ky-RKi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liJ-yI-VU3">
                                 <rect key="frame" x="132" y="423" width="150" height="35"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
@@ -110,14 +101,24 @@
                                     <action selector="goBackTapped:" destination="UQM-8G-dDE" eventType="touchUpInside" id="AAW-Iz-cnx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUG-c6-l9n">
+                                <rect key="frame" x="68" y="134" width="278" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="Ha8-cV-Gcf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9MI-hk-fkY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="liJ-yI-VU3" firstAttribute="centerX" secondItem="ZUG-c6-l9n" secondAttribute="centerX" id="FQN-Dd-JNA"/>
-                            <constraint firstItem="ZUG-c6-l9n" firstAttribute="top" secondItem="9MI-hk-fkY" secondAttribute="top" constant="117" id="IVb-AX-Emi"/>
-                            <constraint firstItem="ZUG-c6-l9n" firstAttribute="centerX" secondItem="9MI-hk-fkY" secondAttribute="centerX" id="jn2-10-Pjv"/>
-                            <constraint firstItem="liJ-yI-VU3" firstAttribute="top" secondItem="ZUG-c6-l9n" secondAttribute="bottom" constant="220" id="nkT-Bd-kCF"/>
+                            <constraint firstItem="ZUG-c6-l9n" firstAttribute="leading" secondItem="9MI-hk-fkY" secondAttribute="leading" constant="68" id="3UF-Vi-9Kr"/>
+                            <constraint firstItem="ZUG-c6-l9n" firstAttribute="centerX" secondItem="liJ-yI-VU3" secondAttribute="centerX" id="Wfe-eW-SYq"/>
+                            <constraint firstItem="ZUG-c6-l9n" firstAttribute="top" secondItem="9MI-hk-fkY" secondAttribute="top" constant="90" id="ZeE-nu-qfd"/>
+                            <constraint firstItem="ZUG-c6-l9n" firstAttribute="centerX" secondItem="WTi-re-55x" secondAttribute="centerX" id="eJM-Hn-heE"/>
+                            <constraint firstItem="9MI-hk-fkY" firstAttribute="bottom" secondItem="liJ-yI-VU3" secondAttribute="bottom" constant="404" id="kUm-PK-UVs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ORS-0s-oHg"/>
