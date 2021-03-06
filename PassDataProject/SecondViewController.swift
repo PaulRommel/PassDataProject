@@ -21,5 +21,7 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func goBackTapped(_ sender: UIButton) {
+        //binding the functionality to the "Go Bask" button handler
+        performSegue(withIdentifier: "unwindSegue", sender: nil)
     }
 }
